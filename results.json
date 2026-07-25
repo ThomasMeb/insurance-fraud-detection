@@ -1,0 +1,34 @@
+{
+  "dataset": "Auto Insurance Claims (insurance_claims.csv), 1000 claims",
+  "n_total": 1000,
+  "n_train": 700,
+  "n_test": 300,
+  "fraud_rate_pct": 24.7,
+  "supervised": {
+    "model": "XGBoost (scale_pos_weight=3.0)",
+    "pr_auc": 0.58,
+    "roc_auc": 0.837,
+    "precision_at_50": 64.0,
+    "precision_top_decile": 60.0,
+    "lift_decile1": 2.4,
+    "recall_top_decile": 24.3,
+    "base_rate_pct": 24.7
+  },
+  "unsupervised": {
+    "model": "Isolation Forest",
+    "precision_top_decile": 20.0,
+    "novel_fraud_rate_pct": 50.0
+  },
+  "top_features_gain": [
+    "incident_severity_Total Loss",
+    "incident_severity_Major Damage",
+    "incident_severity_Minor Damage",
+    "insured_hobbies_chess",
+    "insured_hobbies_cross-fit",
+    "auto_model_92x",
+    "insured_hobbies_golf",
+    "insured_occupation_machine-op-inspct",
+    "auto_model_Civic",
+    "insured_hobbies_kayaking"
+  ]
+}
